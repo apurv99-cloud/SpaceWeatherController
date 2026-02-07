@@ -8,7 +8,7 @@ It is intended to be extended later with authentication, authorization, and a we
 
 ---
 
-## 🚀 Project Overview
+##  Project Overview
 
 Space weather events such as **solar flares**, **coronal mass ejections (CMEs)**, and **geomagnetic storms** can affect satellites, communication systems, navigation, and power grids.
 
@@ -20,7 +20,7 @@ This project simulates how a backend system:
 
 ---
 
-## 🧠 Key Features
+## Key Features
 
 - RESTful APIs using Spring Boot
 - Domain-based data modeling
@@ -32,53 +32,7 @@ This project simulates how a backend system:
 
 ---
 
-## 🛠️ Tech Stack
-
-- **Java**
-- **Spring Boot**
-- **Spring Web (REST APIs)**
-- **Spring Data JPA**
-- **Hibernate**
-- **PostgreSQL**
-- **Maven**
-- **Postman** (for API testing)
-
----
-
-## 📂 Project Architecture
-
-src/main/java
-└── com.spaceweather.demo
-├── controller
-│ └── WeatherController.java
-├── service
-│ └── WeatherService.java
-├── repository
-│ └── WeatherRepository.java
-└── model
-└── WeatherData.java
-
----
-
-## 🧪 API Endpoints
-
-### ➤ Add Weather Data
-**POST**
-
-/api/weather/add
-
-**Request Body (JSON):**
-```json
-{
-  "solarSpeedOfWind": 820,
-  "levelOfRadiation": 7.1,
-  "kpIndex": 6,
-  "cmeProbability": 0.5,
-  "source": "L1"
-}
-
-
-Alert Level Logic
+## Alert Level Logic
 
 The alert level is evaluated based on the following rules:
 
@@ -96,5 +50,70 @@ Solar Wind Speed > 700 km/s
 
 NORMAL
 
-All other conditions
+---
+
+### Why This Project Matters
+
+This project demonstrates:
+
+Strong backend fundamentals
+
+Database-driven application design
+
+Real-world domain modeling
+
+Clean separation of concerns
+
+Readiness for enterprise-level extensions
+
+---
+
+## Tech Stack
+
+- **Java**
+- **Spring Boot**
+- **Spring Web (REST APIs)**
+- **Spring Data JPA**
+- **Hibernate**
+- **PostgreSQL**
+- **Maven**
+- **Postman** (for API testing)
+
+---
+
+## Project Architecture
+
+src/main/java
+└── com.spaceweather.demo
+├── controller
+│ └── WeatherController.java
+├── service
+│ └── WeatherService.java
+├── repository
+│ └── WeatherRepository.java
+└── model
+└── WeatherData.java
+
+---
+
+##  API Endpoints
+
+### ➤ Add Weather Data
+**POST**
+
+/api/weather/add
+
+### Request Body (JSON)
+```json
+{
+  "solarSpeedOfWind": 820,
+  "levelOfRadiation": 7.1,
+  "kpIndex": 6,
+  "cmeProbability": 0.5,
+  "source": "L1"
+}
+
+
+
+
 
